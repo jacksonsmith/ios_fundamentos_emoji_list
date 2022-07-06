@@ -7,13 +7,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol ViewControllerDelegate {
+    func changeTitle()
+}
+
+class ViewController: UIViewController, ViewControllerDelegate {
+    @IBOutlet var mainTitle: UILabel!
+    
+    var delegate: ViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    func changeTitle() {
+        mainTitle.text = "Agora fui delegado, e também vou mostrar uns emojis 🙋🏾🎃🤹🏼‍♀️"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tableView = segue.destination as? TableViewController
+        
+        tableView?.firstviewController = self
 
+    }
 }
 

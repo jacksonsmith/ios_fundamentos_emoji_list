@@ -10,10 +10,13 @@ import UIKit
 
 class TableViewController : UITableViewController {
     
+    var firstviewController: ViewController?
+    
     let emotes: [String] = ["😆", "😂", "😁", "😊", "😉", "😚", "😎", "🐶", "😇", "😝"]
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell positon: \(indexPath.row) taped")
+        firstviewController?.changeTitle()
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
