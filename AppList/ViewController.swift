@@ -14,8 +14,6 @@ protocol ViewControllerDelegate {
 class ViewController: UIViewController, ViewControllerDelegate {
     @IBOutlet var mainTitle: UILabel!
     
-    var delegate: ViewControllerDelegate?
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

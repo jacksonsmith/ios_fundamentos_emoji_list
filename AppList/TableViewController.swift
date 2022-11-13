@@ -11,8 +11,9 @@ import UIKit
 class TableViewController : UITableViewController {
     
     var firstviewController: ViewController?
+    //delegate
     
-    let emotes: [String] = ["😆", "😂", "😁", "😊", "😉", "😚", "😎", "🐶", "😇", "😝"]
+    let emotes: [String] = ["😆", "😂", "😁", "😊", "😉", "😚", "😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝","😎", "🐶", "😇", "😝"]
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell positon: \(indexPath.row) taped")
@@ -23,17 +24,19 @@ class TableViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        print("section: \(indexPath.section) row: \(indexPath.row)")
+        
         let cell = UITableViewCell()
         
-        cell.backgroundColor = .white
-        cell.textLabel?.text = "\(indexPath.row): \(emotes[indexPath.row])"
+        cell.textLabel?.text = emotes[indexPath.row]
+        
         cell.textLabel?.textAlignment = .center
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return emotes.count
+        return 20
     }
 }
 
