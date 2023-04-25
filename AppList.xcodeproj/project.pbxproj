@@ -14,7 +14,6 @@
 		7A93DB2B28762EE3004C702F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A93DB2A28762EE3004C702F /* Assets.xcassets */; };
 		7A93DB2E28762EE3004C702F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A93DB2C28762EE3004C702F /* LaunchScreen.storyboard */; };
 		7A93DB3628762F2F004C702F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93DB3528762F2F004C702F /* TableViewController.swift */; };
-		7A93DB5A2876548F004C702F /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93DB592876548F004C702F /* Table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		7A93DB2D28762EE3004C702F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A93DB2F28762EE3004C702F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A93DB3528762F2F004C702F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		7A93DB592876548F004C702F /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				7A93DB2328762EE1004C702F /* SceneDelegate.swift */,
 				7A93DB3528762F2F004C702F /* TableViewController.swift */,
 				7A93DB2528762EE1004C702F /* ViewController.swift */,
-				7A93DB592876548F004C702F /* Table.swift */,
 				7A93DB2728762EE1004C702F /* Main.storyboard */,
 				7A93DB2A28762EE3004C702F /* Assets.xcassets */,
 				7A93DB2C28762EE3004C702F /* LaunchScreen.storyboard */,
@@ -145,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A93DB2628762EE1004C702F /* ViewController.swift in Sources */,
-				7A93DB5A2876548F004C702F /* Table.swift in Sources */,
 				7A93DB2228762EE1004C702F /* AppDelegate.swift in Sources */,
 				7A93DB2428762EE1004C702F /* SceneDelegate.swift in Sources */,
 				7A93DB3628762F2F004C702F /* TableViewController.swift in Sources */,
